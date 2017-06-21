@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="mysql-connector-java-5.0.4-bin">
+    <archive path="F:/编程相关/javaWeb/图书管理系统/libs/javax.servlet.jsp.jstl.jar" />
+    <archive path="F:/编程相关/javaWeb/图书管理系统/libs/SmartUpload.jar" />
+    <archive path="F:/编程相关/javaWeb/图书管理系统/libs/jstl-impl-1.2.2.jar" />
+  </library>
+  <library name="libs">
+    <archive path="F:/编程相关/javaWeb/图书管理系统/libs/SmartUpload.jar" />
+    <archive path="F:/编程相关/javaWeb/图书管理系统/libs/jstl-impl-1.2.2.jar" />
+    <archive path="F:/编程相关/javaWeb/图书管理系统/libs/javax.servlet.jsp.jstl.jar" />
+    <archive path="F:/编程相关/javaWeb/图书管理系统/libs/mysql-connector-java-5.0.4-bin.jar" />
+  </library>
+</eclipse-userlibraries>
+

@@ -1,0 +1,78 @@
+//package me.hekuan.book.servlet;
+//
+//import me.hekuan.book.factory.ServiceFactory;
+//import me.hekuan.book.vo.Books;
+//import me.hekuan.util.Validate.ValidateUtils;
+//
+//import javax.servlet.ServletException;
+//import javax.servlet.annotation.WebServlet;
+//import javax.servlet.http.HttpServlet;
+//import javax.servlet.http.HttpServletRequest;
+//import javax.servlet.http.HttpServletResponse;
+//import java.io.IOException;
+//
+//@WebServlet(name = "shopServlet", urlPatterns = "pages/back/books/shopServlet/*")
+//public class ShopServlet extends HttpServlet {
+//    @Override
+//    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        this.doGet(request, response);
+//    }
+//
+//    @Override
+//    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//        String path = "/pages/errors.jsp"; // 定义错误页面
+//        String status = request.getRequestURI().substring(request.getRequestURI().lastIndexOf("/") + 1);
+//        if (status != null) {
+//            if ("booksList".equals(status)) {
+//                path = this.booksList(request);
+//            }
+//        }
+//        request.getRequestDispatcher(path).forward(request, response);
+//    }
+//
+//    public String purchase(HttpServletRequest request) {
+//        String msg = "";
+//        String url = "";
+//        Integer bid = Integer.parseInt(request.getParameter("bid"));
+//        String aid = request.getParameter("aid");
+//        String note = request.getParameter("note");
+//
+//
+//        if (bid != null && ValidateUtils.validateEmpty(aid)) {
+//            Books vo = new Books();
+//            vo.setBid(bid);
+//            try {
+//                if (ServiceFactory.getIBooksServiceInstance().purchaseByBid(vo, aid)) {
+//                    msg = "购买成功";
+//                    url = "/shop.jsp";
+//                } else {
+//                    msg = "购买失败";
+//                    url = "/shop.jsp";
+//                }
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        request.setAttribute("msg", msg);
+//        request.setAttribute("url", url);
+//        System.out.println(msg + "----------------" + url);
+//        return "/pages/forward.jsp";
+//    }
+//
+//    public String booksList(HttpServletRequest request) {
+//        System.out.println("------这里是booksList------");
+//        String msg = "";
+//        String url = "/shop.jsp";
+//
+//        request.setAttribute("bookName","123321");
+//        request.setAttribute("note","note1111");
+//        request.setAttribute("credate","1111-11-11");
+//        request.setAttribute("price","0000");
+//        request.setAttribute("item","123");
+//
+//        request.setAttribute("msg", msg);
+//        request.setAttribute("url", url);
+//        System.out.println(msg + "----------------" + url);
+//        return "/pages/forward.jsp";
+//    }
+//}

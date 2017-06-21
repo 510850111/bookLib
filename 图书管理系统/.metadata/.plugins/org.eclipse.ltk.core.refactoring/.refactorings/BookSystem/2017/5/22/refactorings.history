@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;WebContent&apos;&#x0D;&#x0A;- Original project: &apos;BookSystem&apos;&#x0D;&#x0A;- Destination element: &apos;WebContent&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     login.jsp&#x0D;&#x0A;     pages&#x0D;&#x0A;     assets&#x0D;&#x0A;     validate" description="Copy elements" element1="web-content/login.jsp" element2="web-content/pages" element3="web-content/assets" element4="web-content/validate" files="1" flags="589830" folders="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1496243787662" target="/图书管理系统_E/WebContent" units="0" version="1.0"/>
+</session>
